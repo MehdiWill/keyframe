@@ -1,0 +1,47 @@
+.container {
+  background-color: #93dfec;
+  animation: changebackground 5s linear infinite;
+
+}
+
+.content {
+  width: 100px;
+  height: 100px;
+  animation: move 5s linear infinite;
+  background-image: url("http://pixelartmaker.com/art/dec6ff2b07f69c1.png");
+}
+
+@keyframes move {
+
+  0% {
+    transform: translate(0);
+    opacity: 0;
+    background: black;
+  }
+
+  50% {
+    transform: translate(1750px);
+    opacity: 1;
+    background: yellow;
+  }
+
+  100% {
+    opacity: 0;
+    background: blue;
+  }
+
+}
+
+@keyframes changebackground {
+  0% {
+    background: #69b7eb;
+  }
+
+  50% {
+    background: #b3dbd3;
+  }
+
+  100% {
+    background: #f4d6db;
+  }
+}
